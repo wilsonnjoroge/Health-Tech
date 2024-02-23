@@ -134,10 +134,11 @@ export const forgotPassword = async (req, res, next) => {
   const resetUrl = `${req.protocol}://${req.get("host")}/app/auth/resetPassword/${resetToken}`;
   const body = "Forgot password? Click the link: " + resetUrl;
 
-  // outputs the body + reset token (terminal)
-  console.log(body);
+  // outputs the body + reset token (terminal) as object
+  console.log({body});
 
   next();
+
 };
 
 
