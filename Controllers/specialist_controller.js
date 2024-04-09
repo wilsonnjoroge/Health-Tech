@@ -71,7 +71,7 @@ export const registerNewSpecialist = async (req, res, next) => {
 
 
 //Registered Specialist log in
-export const logIn = async (req, res, next) => {
+export const logInSpecialist = async (req, res, next) => {
   const { licenseNumber, password} = req.body;
 
   // Check if patient exists by license number
