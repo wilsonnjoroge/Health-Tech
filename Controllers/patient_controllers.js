@@ -70,7 +70,7 @@ export const registerNewPatient = async (req, res, next) => {
 
 
 //Registered users log in
-export const logIn = async (req, res, next) => {
+export const logInPatient = async (req, res, next) => {
   const { email, password} = req.body;
 
   // Check if patient exists by email
